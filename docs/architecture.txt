@@ -1,0 +1,46 @@
+CLOUD TASK MANAGER API
+ARCHITECTURE
+
+Client / Browser
+       |
+       | HTTP Request
+       v
+   AWS EC2
+       |
+       v
+Docker Container
+       |
+       v
+Flask REST API
+       |
+       v
+Task Management Logic
+
+
+CI/CD FLOW
+
+Developer
+    |
+    v
+GitHub Repository
+    |
+    v
+GitHub Actions
+    |
+    v
+Run Tests
+    |
+    v
+Build Docker Image
+    |
+    v
+Amazon ECR
+    |
+    v
+Amazon EC2
+    |
+    v
+Docker Container
+    |
+    v
+Flask API
